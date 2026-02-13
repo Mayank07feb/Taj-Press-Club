@@ -1,0 +1,661 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout page="members">
+  <!-- ===============================
+       HERO SECTION
+       =============================== -->
+  <section
+    class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden"
+  >
+    <!-- Background Image -->
+    <img
+      src="../assets/images/membership-hero.jpg"
+      alt="Taj Press Club Members"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Gradient Overlay -->
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/80 to-primary/90"
+    >
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center text-white">
+      <div class="mb-6">
+        <span
+          class="inline-block px-5 py-2 bg-accent/20 border-2 border-accent rounded-sm"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >Our Community</span
+          >
+        </span>
+      </div>
+
+      <h1
+        class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-accent"
+      >
+        Our Members
+      </h1>
+
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-16 h-px bg-accent"></div>
+        <div class="w-3 h-3 rotate-45 bg-accent"></div>
+        <div class="w-16 h-px bg-accent"></div>
+      </div>
+
+      <p
+        class="text-xl sm:text-2xl max-w-3xl mx-auto opacity-95 leading-relaxed"
+      >
+        ताज प्रेस क्लब के सम्मानित सदस्य
+      </p>
+    </div>
+  </section>
+
+  <!-- ===============================
+       EXECUTIVE COMMITTEE SECTION
+       =============================== -->
+  <section class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-accent/10 border border-accent/30 rounded-sm mb-6"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >Our Leadership</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          Executive Committee
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+      </div>
+
+      <!-- ===================== President (Adhyaksh) ===================== -->
+      <div class="max-w-4xl mx-auto mb-16">
+        <div
+          class="bg-gradient-to-br from-primary to-primary-hover rounded-lg shadow-2xl overflow-hidden border-4 border-accent"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-0">
+            <!-- Image Section -->
+            <div
+              class="md:col-span-2 bg-white p-10 flex items-center justify-center"
+            >
+              <div class="relative flex flex-col items-center">
+                <!-- Bigger Image -->
+                <div
+                  class="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-8 border-accent shadow-xl"
+                >
+                  <img
+                    src="../assets/images/team/manoj-mishra.jpg"
+                    alt="मनोज कुमार मिश्र"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <!-- Badge -->
+                <div
+                  class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-accent text-primary px-6 py-2 rounded-sm font-bold text-sm whitespace-nowrap shadow-md"
+                >
+                  अध्यक्ष / President
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="md:col-span-3 p-8 md:p-10 text-white">
+              <h3 class="font-serif text-3xl font-bold mb-2 text-accent">
+                मनोज कुमार मिश्र
+              </h3>
+              <p class="text-xl mb-4 opacity-90">Manoj Kumar Mishra</p>
+
+              <!-- Contact -->
+              <div class="space-y-2 text-sm opacity-95 mb-6">
+                <p class="flex items-center gap-2">
+                  <span class="material-icons text-accent text-base">email</span
+                  >
+                  manojhindustan123@gmail.com
+                </p>
+                <p class="flex items-center gap-2">
+                  <span class="material-icons text-accent text-base">phone</span
+                  >
+                  +91 99271 00213
+                </p>
+              </div>
+
+              <!-- Description -->
+              <div class="prose prose-sm text-white/90 max-w-none">
+                <p class="mb-3">
+                  28 वर्षों का पत्रकारिता अनुभव। दैनिक आज, राष्ट्रीय सहारा, अमर
+                  उजाला में कार्य किया। वर्तमान में हिन्दुस्तान समाचार पत्र आगरा
+                  में सिटी हेड/विशेष संवाददाता।
+                </p>
+                <p class="mb-3">
+                  22 वर्षों से उत्तर प्रदेश सरकार से मान्यता प्राप्त पत्रकार।
+                  तीन दर्जन से अधिक राष्ट्राध्यक्षों की कवरेज, भारत-पाक शिखर
+                  वार्ता, बॉलीवुड हस्तियों के साक्षात्कार।
+                </p>
+                <p class="mb-3">
+                  आगरा के जोंस मिल और जगदीशपुरा कांड का खुलासा करने में अहम
+                  भूमिका। हिन्दुस्तान की ओर से कोविड कवरेज के लिए होनहार अवार्ड
+                  और सिल्वर मेडल प्राप्त।
+                </p>
+                <p>
+                  1990 में आगरा कॉलेज छात्र संघ के सचिव। दो बार ताज प्रेस क्लब
+                  के उपाध्यक्ष। वर्तमान में ताज प्रेस क्लब के अध्यक्ष।
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== Office Bearers ===================== -->
+      <!-- <div class="mb-16">
+        <h3 class="font-serif text-2xl font-bold text-center text-primary mb-8">
+          पदाधिकारी / Office Bearers
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/adarsh-gupta.jpg"
+                alt="आदर्श नंदन गुप्ता"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                आदर्श नंदन गुप्ता
+              </h4>
+              <p class="text-text-body mb-2">Adarsh Nandan Gupta</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >उपाध्यक्ष</span
+              >
+            </div>
+          </div>
+
+         
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/alok-dwivedi.jpg"
+                alt="आलोक द्विवेदी"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                आलोक द्विवेदी
+              </h4>
+              <p class="text-text-body mb-2">Alok Dwivedi</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >सचिव</span
+              >
+            </div>
+          </div>
+
+         
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/piyush-sharma.jpg"
+                alt="पीयूष शर्मा"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                पीयूष शर्मा
+              </h4>
+              <p class="text-text-body mb-2">Piyush Sharma</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >सचिव</span
+              >
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- ===================== Vice Presidents ===================== -->
+      <div class="mb-16">
+        <h3 class="font-serif text-2xl font-bold text-center text-primary mb-8">
+          उपाध्यक्ष / Vice Presidents
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Ajendra Singh Chauhan -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/ajendra-chauhan.jpg"
+                alt="अजेंद्र सिंह चौहान"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                अजेंद्र सिंह चौहान
+              </h4>
+              <p class="text-text-body mb-2">Ajendra Singh Chauhan</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >उपाध्यक्ष</span
+              >
+            </div>
+          </div>
+
+          <!-- Adarsh Nandan Gupta -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/adarsh-gupta.jpg"
+                alt="आदर्श नंदन गुप्ता"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                आदर्श नंदन गुप्ता
+              </h4>
+              <p class="text-text-body mb-2">Adarsh Nandan Gupta</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >उपाध्यक्ष</span
+              >
+            </div>
+          </div>
+
+          <!-- Sajjan Sagar -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/sajjan-sagar.jpg"
+                alt="सज्जन सागर"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                सज्जन सागर
+              </h4>
+              <p class="text-text-body mb-2">Sajjan Sagar</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >उपाध्यक्ष</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== General Secretary & Treasurer ===================== -->
+      <div class="mb-16">
+        <h3 class="font-serif text-2xl font-bold text-center text-primary mb-8">
+          महासचिव एवं कोषाध्यक्ष
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Vivek Jain - General Secretary -->
+          <div
+            class="max-w-sm mx-auto bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/vivek-jain.jpg"
+                alt="विवेक जैन"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                विवेक जैन
+              </h4>
+              <p class="text-text-body mb-2">Vivek Jain</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+              >
+                महासचिव
+              </span>
+            </div>
+          </div>
+
+          <!-- Dheeraj Sharma - Treasurer -->
+          <div
+            class="max-w-sm mx-auto bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/dheeraj-sharma.jpg"
+                alt="धीरज शर्मा"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                धीरज शर्मा
+              </h4>
+              <p class="text-text-body mb-2">Dheeraj Sharma</p>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+              >
+                कोषाध्यक्ष
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== Secretaries ===================== -->
+      <div class="mb-16">
+        <h3 class="font-serif text-2xl font-bold text-center text-primary mb-8">
+          सचिव / Secretaries
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Alok Dwivedi -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/alok-dwivedi.jpg"
+                alt="आलोक द्विवेदी"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                आलोक द्विवेदी
+              </h4>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >सचिव</span
+              >
+            </div>
+          </div>
+
+          <!-- Anil Rana -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/anil-rana.jpg"
+                alt="अनिल राणा"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                अनिल राणा
+              </h4>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >सचिव</span
+              >
+            </div>
+          </div>
+
+          <!-- Piyush Sharma -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary hover:shadow-2xl transition-all group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/piyush-sharma.jpg"
+                alt="पीयूष शर्मा"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 text-center">
+              <h4 class="font-serif text-xl font-bold text-text-heading mb-1">
+                पीयूष शर्मा
+              </h4>
+              <span
+                class="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-sm"
+                >सचिव</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== Executive Members ===================== -->
+      <div class="mb-12">
+        <h3 class="font-serif text-2xl font-bold text-center text-primary mb-8">
+          कार्यकारिणी सदस्य
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <!-- Row 1 -->
+          <!-- 1. Jagat Narayan Sharma -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/jagat-narayan-sharma.jpg"
+                alt="Jagat Narayan Sharma"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">जगत नारायण शर्मा</p>
+              <p class="text-sm text-gray-400">Jagat Narayan Sharma</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 2. Sharad Sharma -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/sharad-sharma.jpg"
+                alt="Sharad Sharma"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">शरद शर्मा</p>
+              <p class="text-sm text-gray-400">Sharad Sharma</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 3. Rajesh Sharma -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/rajesh-sharma.jpg"
+                alt="Rajesh Sharma"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">राजेश शर्मा</p>
+              <p class="text-sm text-gray-400">Rajesh Sharma</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 4. Rajesh Dubey -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/rajesh-dubey.jpg"
+                alt="Rajesh Dubey"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">राजेश दुबे</p>
+              <p class="text-sm text-gray-400">Rajesh Dubey</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <!-- 5. Manish Jain -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/manish-jain.jpg"
+                alt="Manish Jain"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">मनीष जैन</p>
+              <p class="text-sm text-gray-400">Manish Jain</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 6. Arun Rawat -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/arun-rawat.jpg"
+                alt="Arun Rawat"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">अरुण रावत</p>
+              <p class="text-sm text-gray-400">Arun Rawat</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 7. S. P. Singh -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/s-p-singh.jpg"
+                alt="S. P. Singh"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">एस. पी. सिंह</p>
+              <p class="text-sm text-gray-400">S. P. Singh</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 8. Farhan Khan -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/farhan-khan.jpg"
+                alt="Farhan Khan"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">फरहान खान</p>
+              <p class="text-sm text-gray-400">Farhan Khan</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <!-- 9. Jai Singh Verma -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/jai-singh-verma.jpg"
+                alt="Jai Singh Verma"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">जय सिंह वर्मा</p>
+              <p class="text-sm text-gray-400">Jai Singh Verma</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 10. Sheetal Singh Maya -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/sheetal-singh-maya.jpg"
+                alt="Sheetal Singh Maya"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">शीतल सिंह माया</p>
+              <p class="text-sm text-gray-400">Sheetal Singh Maya</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+
+          <!-- 11. Virendra Imal -->
+          <div
+            class="bg-section-bg rounded-lg shadow-xl overflow-hidden border-t-4 border-primary p-4 text-center group"
+          >
+            <div class="aspect-square overflow-hidden bg-gray-200">
+              <img
+                src="../assets/images/team/virendra-imal.jpg"
+                alt="Virendra Imal"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-2">
+              <p class="font-semibold">वीरेंद्र इमल</p>
+              <p class="text-sm text-gray-400">Virendra Imal</p>
+              <p class="text-xs text-primary">कार्यकारिणी सदस्य</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

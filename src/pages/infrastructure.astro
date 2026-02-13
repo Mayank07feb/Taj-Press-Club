@@ -1,0 +1,441 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout page="infrastructure">
+  <!-- ===============================
+       HERO SECTION
+       =============================== -->
+  <section
+    class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden"
+  >
+    <!-- Background Image -->
+    <img
+      src="../assets/images/infrastructure-hero.jpg"
+      alt="Taj Press Club Infrastructure"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Gradient Overlay -->
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/80 to-primary/90"
+    >
+    </div>
+
+    <!-- Decorative Pattern -->
+    <div
+      class="absolute inset-0 opacity-5"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\"
+      60\"
+      height='\"60\"'
+      viewBox='\"0'
+      0
+      60
+      60\"
+      xmlns='\"http://www.w3.org/2000/svg\"%3E%3Cpath'
+      d='\"M30'
+      0l30
+      30-30
+      30L0
+      30z\"
+      fill='\"%23D4AF37\"'
+      fill-opacity='\"0.4\"%3E%3C/path%3E%3C/svg%3E&apos;);"'
+    >
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center text-white">
+      <div class="mb-6">
+        <span
+          class="inline-block px-5 py-2 bg-accent/20 border-2 border-accent rounded-sm"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >World-Class Facilities</span
+          >
+        </span>
+      </div>
+
+      <h1
+        class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-accent"
+      >
+        Infrastructure
+      </h1>
+
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-16 h-px bg-accent"></div>
+        <div class="w-3 h-3 rotate-45 bg-accent"></div>
+        <div class="w-16 h-px bg-accent"></div>
+      </div>
+
+      <p
+        class="text-xl sm:text-2xl max-w-3xl mx-auto opacity-95 leading-relaxed"
+      >
+        ₹50 Lakh+ ki investment se bani aadhunik suvidhayen
+      </p>
+    </div>
+  </section>
+
+  <!-- ===============================
+       MAIN FACILITIES
+       =============================== -->
+  <section class="w-full bg-section-bg py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-primary/10 border border-primary/30 rounded-sm mb-6"
+        >
+          <span
+            class="text-primary font-bold text-sm tracking-widest uppercase"
+          >
+            Our Facilities
+          </span>
+        </div>
+
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          Modern Infrastructure
+        </h2>
+
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+      </div>
+
+      <div class="space-y-12">
+        <!-- Library -->
+        <div
+          class="bg-white p-10 rounded-lg shadow-xl border-l-8 border-accent"
+        >
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center"
+            >
+              <span class="material-icons text-4xl text-accent"
+                >local_library</span
+              >
+            </div>
+            <h3 class="font-serif text-3xl font-bold text-primary">
+              Modern Library
+            </h3>
+          </div>
+
+          <p class="text-text-body text-lg leading-relaxed mb-6">
+            Comprehensive collection of newspapers, magazines, journals aur
+            digital archives. Research aur reference ke liye perfect space.
+          </p>
+
+          <ul class="space-y-3">
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>National & International newspapers</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Digital archive system</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Comfortable reading area</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Reference materials collection</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Conference Hall -->
+        <div
+          class="bg-white p-10 rounded-lg shadow-xl border-l-8 border-accent"
+        >
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center"
+            >
+              <span class="material-icons text-4xl text-accent">groups</span>
+            </div>
+            <h3 class="font-serif text-3xl font-bold text-primary">
+              Conference Hall
+            </h3>
+          </div>
+
+          <p class="text-text-body text-lg leading-relaxed mb-6">
+            State-of-the-art conference hall with modern audio-visual equipment.
+            Seminars, meetings aur press conferences ke liye ideal.
+          </p>
+
+          <ul class="space-y-3">
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Seating capacity: 100+ people</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Advanced AV systems</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>High-speed internet</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Air-conditioned space</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Technology Center -->
+        <div
+          class="bg-white p-10 rounded-lg shadow-xl border-l-8 border-accent"
+        >
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center"
+            >
+              <span class="material-icons text-4xl text-accent">computer</span>
+            </div>
+            <h3 class="font-serif text-3xl font-bold text-primary">
+              Technology Center
+            </h3>
+          </div>
+
+          <p class="text-text-body text-lg leading-relaxed mb-6">
+            Fully equipped workstations with latest technology. Members ke liye
+            research, writing aur digital work ke liye dedicated space.
+          </p>
+
+          <ul class="space-y-3">
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Modern computer workstations</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>High-speed Wi-Fi</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>Printing & scanning facilities</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="material-icons text-accent">check_circle</span>
+              <span>24/7 technical support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       ADDITIONAL AMENITIES
+       =============================== -->
+  <section class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-accent/10 border border-accent/30 rounded-sm mb-6"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >Comfort & Convenience</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          Additional Amenities
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Canteen -->
+        <div
+          class="group bg-section-bg p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary hover:border-accent"
+        >
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
+          >
+            <span class="material-icons text-5xl text-accent">restaurant</span>
+          </div>
+          <h3
+            class="font-serif text-2xl font-bold text-text-heading mb-4 text-center"
+          >
+            Canteen
+          </h3>
+          <p class="text-text-body text-center leading-relaxed">
+            Hygienic aur affordable food options. Fresh tea, coffee aur snacks
+            available throughout the day.
+          </p>
+        </div>
+
+        <!-- Bar & Lounge -->
+        <div
+          class="group bg-section-bg p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary hover:border-accent"
+        >
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
+          >
+            <span class="material-icons text-5xl text-accent">local_bar</span>
+          </div>
+          <h3
+            class="font-serif text-2xl font-bold text-text-heading mb-4 text-center"
+          >
+            Bar & Lounge
+          </h3>
+          <p class="text-text-body text-center leading-relaxed">
+            Comfortable lounge area for relaxation. Perfect space for informal
+            meetings and networking.
+          </p>
+        </div>
+
+        <!-- Waiting Area -->
+        <div
+          class="group bg-section-bg p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary hover:border-accent"
+        >
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
+          >
+            <span class="material-icons text-5xl text-accent">event_seat</span>
+          </div>
+          <h3
+            class="font-serif text-2xl font-bold text-text-heading mb-4 text-center"
+          >
+            Waiting Lounge
+          </h3>
+          <p class="text-text-body text-center leading-relaxed">
+            Air-conditioned waiting area with comfortable seating. Newspapers
+            and magazines available.
+          </p>
+        </div>
+
+        <!-- Committee Room -->
+        <div
+          class="group bg-section-bg p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary hover:border-accent"
+        >
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
+          >
+            <span class="material-icons text-5xl text-accent"
+              >business_center</span
+            >
+          </div>
+          <h3
+            class="font-serif text-2xl font-bold text-text-heading mb-4 text-center"
+          >
+            Committee Room
+          </h3>
+          <p class="text-text-body text-center leading-relaxed">
+            Private meeting space for executive meetings and important
+            discussions with full privacy.
+          </p>
+        </div>
+
+        <!-- Parking -->
+        <div
+          class="group bg-section-bg p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary hover:border-accent"
+        >
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
+          >
+            <span class="material-icons text-5xl text-accent"
+              >local_parking</span
+            >
+          </div>
+          <h3
+            class="font-serif text-2xl font-bold text-text-heading mb-4 text-center"
+          >
+            Parking Facility
+          </h3>
+          <p class="text-text-body text-center leading-relaxed">
+            Secure parking space for members' vehicles. Easy access and
+            well-maintained parking area.
+          </p>
+        </div>
+
+        <!-- Security -->
+        <div
+          class="group bg-section-bg p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary hover:border-accent"
+        >
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
+          >
+            <span class="material-icons text-5xl text-accent">security</span>
+          </div>
+          <h3
+            class="font-serif text-2xl font-bold text-text-heading mb-4 text-center"
+          >
+            24/7 Security
+          </h3>
+          <p class="text-text-body text-center leading-relaxed">
+            Round-the-clock security with CCTV surveillance ensuring safe
+            environment for all members.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       CTA SECTION
+       =============================== -->
+  <section
+    class="w-full bg-gradient-to-br from-primary via-primary-hover to-primary py-20 relative overflow-hidden"
+  >
+    <div
+      class="absolute inset-0 opacity-5"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\"
+      80\"
+      height='\"80\"'
+      viewBox='\"0'
+      0
+      80
+      80\"
+      xmlns='\"http://www.w3.org/2000/svg\"%3E%3Cpath'
+      d='\"M0'
+      0h80v80H0z\"
+      fill='\"none\"/%3E%3Cpath'
+      d='\"M0'
+      40h80M40
+      0v80\"
+      stroke='\"%23D4AF37\"'
+      stroke-width='\"1\"/%3E%3C/svg%3E&apos;);"'
+    >
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 text-center text-white relative z-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6 text-accent">
+        Experience Our Facilities
+      </h2>
+      <p class="text-lg mb-8 leading-relaxed opacity-95">
+        Hamari modern infrastructure ka khud anubhav karein. Visit karein ya
+        membership ke liye apply karein.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="/contact-us/"
+          class="inline-flex items-center gap-3 px-10 py-4 bg-accent text-primary font-bold text-lg rounded-sm hover:bg-accent-hover transition-all border-2 border-accent shadow-xl"
+        >
+          <span class="material-icons">location_on</span>
+          Visit Us
+        </a>
+        <a
+          href="/membership/"
+          class="inline-flex items-center gap-3 px-10 py-4 bg-white/10 backdrop-blur-sm text-white font-bold text-lg rounded-sm hover:bg-white/20 transition-all border-2 border-white/50"
+        >
+          <span class="material-icons">person_add</span>
+          Join Today
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

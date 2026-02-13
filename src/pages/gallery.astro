@@ -1,0 +1,711 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout page="gallery">
+  <!-- ===============================
+       HERO SECTION
+       =============================== -->
+  <section
+    class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden"
+  >
+    <!-- Background Image -->
+    <img
+      src="../assets/images/gallery-hero.jpg"
+      alt="Taj Press Club Gallery"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Gradient Overlay -->
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/80 to-primary/90"
+    ></div>
+
+    <!-- Decorative Pattern -->
+    <div
+      class="absolute inset-0 opacity-5"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M30 0l30 30-30 30L0 30z\" fill=\"%23D4AF37\" fill-opacity=\"0.4\"%3E%3C/path%3E%3C/svg%3E');"
+    ></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center text-white">
+      <div class="mb-6">
+        <span
+          class="inline-block px-5 py-2 bg-accent/20 border-2 border-accent rounded-sm"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >Moments That Matter</span
+          >
+        </span>
+      </div>
+
+      <h1
+        class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-accent"
+      >
+        Gallery
+      </h1>
+
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-16 h-px bg-accent"></div>
+        <div class="w-3 h-3 rotate-45 bg-accent"></div>
+        <div class="w-16 h-px bg-accent"></div>
+      </div>
+
+      <p
+        class="text-xl sm:text-2xl max-w-3xl mx-auto opacity-95 leading-relaxed"
+      >
+        Hamare events aur activities ki yaadein
+      </p>
+    </div>
+  </section>
+
+  <!-- ===============================
+       GALLERY CATEGORIES
+       =============================== -->
+  <section class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-accent/10 border border-accent/30 rounded-sm mb-6"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >Explore Our Journey</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          Photo Categories
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-4 mb-16">
+        <button
+          class="filter-btn active px-6 py-3 bg-gradient-to-r from-accent to-accent-hover text-primary font-bold rounded-sm hover:shadow-lg transition-all border-2 border-accent"
+          data-filter="all"
+        >
+          All Photos
+        </button>
+        <button
+          class="filter-btn px-6 py-3 bg-white text-primary font-bold rounded-sm hover:bg-accent hover:text-primary transition-all border-2 border-primary hover:border-accent"
+          data-filter="events"
+        >
+          Events
+        </button>
+        <button
+          class="filter-btn px-6 py-3 bg-white text-primary font-bold rounded-sm hover:bg-accent hover:text-primary transition-all border-2 border-primary hover:border-accent"
+          data-filter="workshops"
+        >
+          Workshops
+        </button>
+        <button
+          class="filter-btn px-6 py-3 bg-white text-primary font-bold rounded-sm hover:bg-accent hover:text-primary transition-all border-2 border-primary hover:border-accent"
+          data-filter="press-conferences"
+        >
+          Press Conferences
+        </button>
+        <button
+          class="filter-btn px-6 py-3 bg-white text-primary font-bold rounded-sm hover:bg-accent hover:text-primary transition-all border-2 border-primary hover:border-accent"
+          data-filter="facilities"
+        >
+          Facilities
+        </button>
+        <button
+          class="filter-btn px-6 py-3 bg-white text-primary font-bold rounded-sm hover:bg-accent hover:text-primary transition-all border-2 border-primary hover:border-accent"
+          data-filter="awards"
+        >
+          Awards
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item group" data-category="events">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/event-1.jpg"
+              alt="Annual Function 2024"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Annual Function 2024
+                </h3>
+                <p class="text-sm opacity-90">
+                  Taj Press Club ki saalana samaroh
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">event</span>
+                  <span class="text-xs">December 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item group" data-category="workshops">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/workshop-1.jpg"
+              alt="Digital Journalism Workshop"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Digital Journalism Workshop
+                </h3>
+                <p class="text-sm opacity-90">
+                  Modern patrakarita ke techniques
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">school</span>
+                  <span class="text-xs">November 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item group" data-category="press-conferences">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/press-conf-1.jpg"
+              alt="State Minister Press Conference"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  State Minister Press Conference
+                </h3>
+                <p class="text-sm opacity-90">
+                  Rajya mantri ka press conference
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">mic</span>
+                  <span class="text-xs">October 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item group" data-category="facilities">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/facility-1.jpg"
+              alt="Conference Hall"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Conference Hall
+                </h3>
+                <p class="text-sm opacity-90">
+                  State-of-the-art conference facility
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">meeting_room</span>
+                  <span class="text-xs">Club Facilities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item group" data-category="awards">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/award-1.jpg"
+              alt="Journalist Excellence Awards"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Journalist Excellence Awards
+                </h3>
+                <p class="text-sm opacity-90">
+                  Outstanding patrakaaron ka samman
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">emoji_events</span>
+                  <span class="text-xs">September 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item group" data-category="events">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/event-2.jpg"
+              alt="Independence Day Celebration"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Independence Day Celebration
+                </h3>
+                <p class="text-sm opacity-90">
+                  Swatantrata diwas samaroh
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">flag</span>
+                  <span class="text-xs">August 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div class="gallery-item group" data-category="workshops">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/workshop-2.jpg"
+              alt="Photography Skills Workshop"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Photography Skills Workshop
+                </h3>
+                <p class="text-sm opacity-90">
+                  Professional photography training
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">camera_alt</span>
+                  <span class="text-xs">July 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div class="gallery-item group" data-category="press-conferences">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/press-conf-2.jpg"
+              alt="Sports Authority Press Meet"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Sports Authority Press Meet
+                </h3>
+                <p class="text-sm opacity-90">
+                  Khel pradhikaran press briefing
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">sports</span>
+                  <span class="text-xs">June 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 9 -->
+        <div class="gallery-item group" data-category="facilities">
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all cursor-pointer">
+            <img
+              src="../assets/images/gallery/facility-2.jpg"
+              alt="Library & Reading Room"
+              class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 class="font-serif text-xl font-bold mb-2 text-accent">
+                  Library & Reading Room
+                </h3>
+                <p class="text-sm opacity-90">
+                  Extensive collection of resources
+                </p>
+                <div class="flex items-center gap-2 mt-3">
+                  <span class="material-icons text-accent text-sm">local_library</span>
+                  <span class="text-xs">Club Facilities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-16">
+        <button
+          class="px-10 py-4 bg-gradient-to-r from-primary to-primary-hover text-white font-bold rounded-sm hover:shadow-xl transition-all border-2 border-primary hover:border-accent inline-flex items-center gap-3"
+        >
+          <span class="material-icons">add_circle</span>
+          Load More Photos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       STATS SECTION
+       =============================== -->
+  <section class="w-full bg-section-bg py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Stat 1 -->
+        <div class="text-center group">
+          <div
+            class="w-24 h-24 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <span class="material-icons text-5xl text-accent">photo_library</span>
+          </div>
+          <div class="text-4xl font-bold text-primary mb-3">1000+</div>
+          <p class="text-text-muted text-lg">Total Photos</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="text-center group">
+          <div
+            class="w-24 h-24 bg-gradient-to-br from-accent to-accent-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <span class="material-icons text-5xl text-primary">event</span>
+          </div>
+          <div class="text-4xl font-bold text-primary mb-3">150+</div>
+          <p class="text-text-muted text-lg">Events Covered</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="text-center group">
+          <div
+            class="w-24 h-24 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <span class="material-icons text-5xl text-accent">emoji_events</span>
+          </div>
+          <div class="text-4xl font-bold text-primary mb-3">50+</div>
+          <p class="text-text-muted text-lg">Awards Distributed</p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="text-center group">
+          <div
+            class="w-24 h-24 bg-gradient-to-br from-accent to-accent-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <span class="material-icons text-5xl text-primary">groups</span>
+          </div>
+          <div class="text-4xl font-bold text-primary mb-3">500+</div>
+          <p class="text-text-muted text-lg">Members Participated</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       VIDEO GALLERY
+       =============================== -->
+  <section class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-primary/10 border border-primary/30 rounded-sm mb-6"
+        >
+          <span class="text-primary font-bold text-sm tracking-widest uppercase"
+            >Watch & Learn</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          Video Gallery
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Video 1 -->
+        <div
+          class="group bg-section-bg rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative h-56 bg-primary/10 flex items-center justify-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-accent to-accent-hover rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform shadow-lg"
+            >
+              <span class="material-icons text-5xl text-primary">play_arrow</span>
+            </div>
+            <img
+              src="../assets/images/video-thumb-1.jpg"
+              alt="Video Thumbnail"
+              class="absolute inset-0 w-full h-full object-cover opacity-50"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-text-heading mb-3">
+              Annual Function Highlights 2024
+            </h3>
+            <p class="text-text-body text-sm mb-4">
+              Saal 2024 ke sabse yaadgaar events
+            </p>
+            <div class="flex items-center gap-2 text-text-muted text-xs">
+              <span class="material-icons text-sm">schedule</span>
+              <span>5:30 minutes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div
+          class="group bg-section-bg rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative h-56 bg-primary/10 flex items-center justify-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-accent to-accent-hover rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform shadow-lg"
+            >
+              <span class="material-icons text-5xl text-primary">play_arrow</span>
+            </div>
+            <img
+              src="../assets/images/video-thumb-2.jpg"
+              alt="Video Thumbnail"
+              class="absolute inset-0 w-full h-full object-cover opacity-50"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-text-heading mb-3">
+              Digital Journalism Workshop
+            </h3>
+            <p class="text-text-body text-sm mb-4">
+              Modern journalism skills training
+            </p>
+            <div class="flex items-center gap-2 text-text-muted text-xs">
+              <span class="material-icons text-sm">schedule</span>
+              <span>8:15 minutes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div
+          class="group bg-section-bg rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all"
+        >
+          <div class="relative h-56 bg-primary/10 flex items-center justify-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-accent to-accent-hover rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform shadow-lg"
+            >
+              <span class="material-icons text-5xl text-primary">play_arrow</span>
+            </div>
+            <img
+              src="../assets/images/video-thumb-3.jpg"
+              alt="Video Thumbnail"
+              class="absolute inset-0 w-full h-full object-cover opacity-50"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-text-heading mb-3">
+              Press Club Tour
+            </h3>
+            <p class="text-text-body text-sm mb-4">
+              Complete facility overview
+            </p>
+            <div class="flex items-center gap-2 text-text-muted text-xs">
+              <span class="material-icons text-sm">schedule</span>
+              <span>4:45 minutes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       LIGHTBOX MODAL
+       =============================== -->
+  <div
+    id="lightbox"
+    class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4"
+  >
+    <button
+      id="closeLightbox"
+      class="absolute top-4 right-4 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
+    >
+      <span class="material-icons text-3xl">close</span>
+    </button>
+
+    <button
+      id="prevImage"
+      class="absolute left-4 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
+    >
+      <span class="material-icons text-3xl">chevron_left</span>
+    </button>
+
+    <button
+      id="nextImage"
+      class="absolute right-4 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
+    >
+      <span class="material-icons text-3xl">chevron_right</span>
+    </button>
+
+    <div class="max-w-5xl max-h-[90vh]">
+      <img
+        id="lightboxImage"
+        src=""
+        alt=""
+        class="max-w-full max-h-[90vh] object-contain"
+      />
+      <div class="text-center mt-4 text-white">
+        <h3 id="lightboxTitle" class="font-serif text-2xl font-bold mb-2"></h3>
+        <p id="lightboxDesc" class="text-white/80"></p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<!-- GALLERY SCRIPTS -->
+<script>
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      // Update active button
+      filterBtns.forEach(b => {
+        b.classList.remove('active', 'bg-gradient-to-r', 'from-accent', 'to-accent-hover', 'text-primary');
+        b.classList.add('bg-white', 'text-primary');
+      });
+      btn.classList.add('active', 'bg-gradient-to-r', 'from-accent', 'to-accent-hover', 'text-primary');
+      btn.classList.remove('bg-white');
+
+      // Filter items
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = 'block';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 10);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxDesc = document.getElementById('lightboxDesc');
+  const closeLightbox = document.getElementById('closeLightbox');
+  const prevImage = document.getElementById('prevImage');
+  const nextImage = document.getElementById('nextImage');
+
+  let currentImageIndex = 0;
+  const images = Array.from(document.querySelectorAll('.gallery-item img'));
+
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      currentImageIndex = index;
+      openLightbox(index);
+    });
+  });
+
+  function openLightbox(index) {
+    const img = images[index];
+    const item = galleryItems[index];
+    
+    lightboxImage.src = img.src;
+    lightboxTitle.textContent = item.querySelector('h3').textContent;
+    lightboxDesc.textContent = item.querySelector('p').textContent;
+    
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightboxFunc() {
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+  }
+
+  closeLightbox.addEventListener('click', closeLightboxFunc);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightboxFunc();
+    }
+  });
+
+  prevImage.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    openLightbox(currentImageIndex);
+  });
+
+  nextImage.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    openLightbox(currentImageIndex);
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('hidden')) {
+      if (e.key === 'Escape') closeLightboxFunc();
+      if (e.key === 'ArrowLeft') prevImage.click();
+      if (e.key === 'ArrowRight') nextImage.click();
+    }
+  });
+</script>
+
+<style>
+  .gallery-item {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+</style>

@@ -1,0 +1,427 @@
+<!-- ===============================
+     TAJ PRESS CLUB – HEADER & NAV
+     PREMIUM DESIGN WITH GOLD ACCENTS
+     =============================== -->
+<header class="w-full sticky top-0 z-50 shadow-lg">
+  <!-- Top Royal Maroon Strip with Gold Border -->
+  <div class="h-1 bg-gradient-to-r from-accent via-primary to-accent"></div>
+
+  <!-- Main Header -->
+  <div class="bg-white border-b-2 border-accent/20">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
+    >
+      <!-- ===============================
+           LEFT: LOGO & CLUB NAME
+           =============================== -->
+      <div class="flex items-center space-x-4">
+        <a href="/" class="flex items-center space-x-4 group">
+          <!-- Logo with Premium Border -->
+          <div class="relative">
+            <div
+              class="absolute -inset-1 bg-gradient-to-br from-accent to-primary rounded-full blur-sm opacity-30 group-hover:opacity-50 transition-opacity"
+            >
+            </div>
+            <div
+              class="relative w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full border-4 border-accent shadow-lg flex items-center justify-center overflow-hidden"
+            >
+              <img
+                src="/assets/images/logo.png"
+                alt="Taj Press Club Agra Logo"
+                class="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+              />
+            </div>
+          </div>
+
+          <!-- Club Name (Hidden on Mobile) -->
+          <div class="hidden md:block">
+            <h1
+              class="font-serif text-xl lg:text-2xl font-bold text-primary leading-tight"
+            >
+              Taj Press Club
+            </h1>
+            <p
+              class="text-xs lg:text-sm text-accent font-semibold tracking-widest"
+            >
+              AGRA
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- ===============================
+           CENTER: NAVIGATION (DESKTOP)
+           =============================== -->
+      <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2">
+        <a
+          href="/"
+          data-path="/"
+          class="nav-link relative px-4 py-2 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary transition-colors group"
+        >
+          <span class="relative z-10">Home</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"
+          ></span>
+        </a>
+        <a
+          href="/about-us/"
+          data-path="/about-us"
+          class="nav-link relative px-4 py-2 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary transition-colors group"
+        >
+          <span class="relative z-10">About Us</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"
+          ></span>
+        </a>
+        <a
+          href="/infrastructure/"
+          data-path="/infrastructure"
+          class="nav-link relative px-4 py-2 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary transition-colors group"
+        >
+          <span class="relative z-10">Infrastructure</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"
+          ></span>
+        </a>
+        <!-- <a
+          href="/membership/"
+          data-path="/membership"
+          class="nav-link relative px-4 py-2 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary transition-colors group"
+        >
+          <span class="relative z-10">Membership</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"
+          ></span>
+        </a> -->
+        <a
+          href="/members/"
+          data-path="/members"
+          class="nav-link relative px-4 py-2 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary transition-colors group"
+        >
+          <span class="relative z-10">Members</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"
+          ></span>
+        </a>
+        <a
+          href="/events/"
+          data-path="/events"
+          class="nav-link relative px-4 py-2 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary transition-colors group"
+        >
+          <span class="relative z-10">Events</span>
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"
+          ></span>
+        </a>
+      </nav>
+
+      <!-- ===============================
+           RIGHT: CTA + MOBILE MENU BTN
+           =============================== -->
+      <div class="flex items-center space-x-3">
+        <!-- CTA Button (Desktop) - Premium Gold Design -->
+        <a
+          href="/contact-us/"
+          class="hidden lg:flex items-center gap-2 px-6 py-3 rounded-sm text-sm font-bold uppercase tracking-wide
+                 bg-gradient-to-r from-accent to-accent-hover text-primary
+                 hover:shadow-lg hover:scale-105
+                 transition-all duration-300
+                 border-2 border-accent"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+            ></path>
+          </svg>
+          Join the Club
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobileMenuBtn"
+          class="lg:hidden p-2 text-primary hover:bg-accent/10 rounded-sm focus:outline-none transition-colors"
+          aria-label="Toggle menu"
+        >
+          <svg
+            id="menuIcon"
+            class="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg
+            id="closeIcon"
+            class="w-7 h-7 hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===============================
+         MOBILE MENU - PREMIUM SLIDE-IN
+         =============================== -->
+    <div
+      id="mobileMenu"
+      class="hidden lg:hidden bg-gradient-to-b from-white to-section-bg border-t-2 border-accent/30 shadow-xl"
+    >
+      <div class="flex flex-col py-6 px-6 space-y-1">
+        <a
+          href="/"
+          data-path="/"
+          class="mobile-nav-link group flex items-center justify-between py-3 px-4 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary hover:bg-accent/10 rounded-sm transition-all"
+        >
+          <span>Home</span>
+          <svg
+            class="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <a
+          href="/about-us/"
+          data-path="/about-us"
+          class="mobile-nav-link group flex items-center justify-between py-3 px-4 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary hover:bg-accent/10 rounded-sm transition-all"
+        >
+          <span>About Us</span>
+          <svg
+            class="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <a
+          href="/infrastructure/"
+          data-path="/infrastructure"
+          class="mobile-nav-link group flex items-center justify-between py-3 px-4 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary hover:bg-accent/10 rounded-sm transition-all"
+        >
+          <span>Infrastructure</span>
+          <svg
+            class="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <!-- <a
+          href="/membership/"
+          data-path="/membership"
+          class="mobile-nav-link group flex items-center justify-between py-3 px-4 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary hover:bg-accent/10 rounded-sm transition-all"
+        >
+          <span>Membership</span>
+          <svg
+            class="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a> -->
+        <a
+          href="/members/"
+          data-path="/members"
+          class="mobile-nav-link group flex items-center justify-between py-3 px-4 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary hover:bg-accent/10 rounded-sm transition-all"
+        >
+          <span>Members</span>
+          <svg
+            class="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <a
+          href="/events/"
+          data-path="/events"
+          class="mobile-nav-link group flex items-center justify-between py-3 px-4 text-sm font-bold uppercase tracking-wide text-text-body hover:text-primary hover:bg-accent/10 rounded-sm transition-all"
+        >
+          <span>Events</span>
+          <svg
+            class="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+
+        <!-- Mobile CTA - Premium Design -->
+        <div class="pt-4 mt-4 border-t-2 border-accent/20">
+          <a
+            href="/contact-us/"
+            class="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-accent to-accent-hover text-primary py-3 px-6 rounded-sm font-bold uppercase tracking-wide text-sm shadow-lg hover:shadow-xl transition-all border-2 border-accent"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+              ></path>
+            </svg>
+            Join the Club
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===============================
+     HEADER SCRIPT - ENHANCED
+     =============================== -->
+<script>
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuIcon = document.getElementById("menuIcon");
+  const closeIcon = document.getElementById("closeIcon");
+
+  if (mobileMenuBtn && mobileMenu && menuIcon && closeIcon) {
+    mobileMenuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        menuIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+      } else {
+        mobileMenu.classList.add("hidden");
+        menuIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+      }
+    });
+  }
+
+  // Active Link Highlighting
+  document.addEventListener("DOMContentLoaded", () => {
+    const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+
+    document.querySelectorAll("[data-path]").forEach((link) => {
+      const linkPath = link.getAttribute("data-path");
+
+      if (linkPath === currentPath) {
+        // Desktop nav styling
+        if (link.classList.contains("nav-link")) {
+          link.classList.add("text-primary");
+          link.classList.remove("text-text-body");
+          // Add active underline
+          const underline = link.querySelector("span.absolute");
+          if (underline) {
+            underline.classList.add("w-full");
+          }
+        }
+
+        // Mobile nav styling
+        if (link.classList.contains("mobile-nav-link")) {
+          link.classList.add("text-primary", "bg-accent/10");
+          link.classList.remove("text-text-body");
+        }
+      }
+    });
+  });
+
+  // Close mobile menu on link click
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+    });
+  });
+
+  // Add scroll shadow effect
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 10) {
+      header.classList.add("shadow-2xl");
+    } else {
+      header.classList.remove("shadow-2xl");
+    }
+
+    lastScroll = currentScroll;
+  });
+</script>
+
+<style>
+  /* Premium hover effects for desktop nav */
+  .nav-link:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Smooth transitions */
+  .nav-link,
+  .mobile-nav-link {
+    transition: all 0.3s ease;
+  }
+
+  /* Active state permanent underline */
+  .nav-link.text-primary span.absolute {
+    width: 100%;
+  }
+</style>

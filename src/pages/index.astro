@@ -1,11 +1,1204 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout page="default">
+  <!-- ===============================
+       HERO SECTION
+       =============================== -->
+  <section
+    class="relative w-full h-[70vh] sm:h-[80vh] lg:h-[85vh] flex items-center justify-center overflow-hidden"
+  >
+    <!-- Background Image -->
+    <!-- <img
+      src="../assets/images/taj-press-hero.jpg"
+      alt="Taj Press Club Entrance"
+      class="absolute inset-0 w-full h-full object-cover"
+    /> -->
+
+    <!-- Gradient Overlay -->
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary/75 to-black/85"
+    >
+    </div>
+
+    <!-- Decorative Pattern Overlay -->
+    <div
+      class="absolute inset-0 opacity-5"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cpath d=M30 0l30 30-30 30L0 30z fill=%23D4AF37 fill-opacity=0.4 /%3E%3C/svg%3E');"
+    >
+    </div>
+
+    <!-- Content -->
+    <div
+      class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center text-white"
+    >
+      <!-- Badge -->
+      <div class="mb-4 sm:mb-6">
+        <span
+          class="inline-block px-4 py-1.5 sm:px-5 sm:py-2 bg-accent/20 border-2 border-accent rounded-full text-accent text-xs sm:text-sm font-bold tracking-widest uppercase"
+        >
+          Est. 1947
+        </span>
+      </div>
+
+      <!-- Heading -->
+      <h1
+        class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 sm:mb-6 text-accent drop-shadow-2xl tracking-tight"
+      >
+        Taj Press Club
+      </h1>
+
+      <!-- Divider + Tagline -->
+      <div class="max-w-2xl mx-auto mb-6 sm:mb-8">
+        <div
+          class="h-px bg-gradient-to-r from-transparent via-accent to-transparent mb-4 sm:mb-6"
+        >
+        </div>
+
+        <p
+          class="font-serif text-lg sm:text-2xl md:text-3xl font-semibold tracking-wide leading-snug"
+        >
+          A Symbol of Journalistic<br class="hidden sm:block" />
+          Dignity & Unity
+        </p>
+
+        <div
+          class="h-px bg-gradient-to-r from-transparent via-accent to-transparent mt-4 sm:mt-6"
+        >
+        </div>
+      </div>
+
+      <!-- Description -->
+      <p
+        class="text-sm sm:text-base md:text-lg max-w-3xl mx-auto mb-8 sm:mb-12 opacity-95 leading-relaxed"
+      >
+        Guardian of the freedom and responsibility of media in the heart of Agra
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-5">
+        <a
+          href="#vision"
+          class="group px-6 sm:px-10 py-3 sm:py-4 rounded-md bg-accent text-primary font-bold text-base sm:text-lg hover:bg-accent-hover transform hover:scale-105 transition-all shadow-2xl border-2 border-accent hover:border-accent-hover"
+        >
+          <span class="flex items-center justify-center gap-2">
+            Our Vision
+            <svg
+              class="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a
+          href="#infrastructure"
+          class="px-6 sm:px-10 py-3 sm:py-4 rounded-md bg-white/10 backdrop-blur-sm text-white border-2 border-white/50 font-bold text-base sm:text-lg hover:bg-white/20 hover:border-white transform hover:scale-105 transition-all shadow-xl"
+        >
+          View Facilities
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       HINGLISH QUOTE BANNER
+       =============================== -->
+  <section
+    class="w-full bg-gradient-to-r from-primary via-primary-hover to-primary py-16 border-y-4 border-accent"
+  >
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center">
+        <!-- Decorative Quote Marks -->
+        <div
+          class="text-accent text-6xl sm:text-7xl font-serif leading-none mb-4"
+        >
+          "
+        </div>
+
+        <h2
+          class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+        >
+          निष्पक्ष पत्रकारिता,<br />
+          <span class="text-accent">सशक्त पहचान</span>
+        </h2>
+
+        <div
+          class="text-accent text-6xl sm:text-7xl font-serif leading-none rotate-180 mt-4"
+        >
+          "
+        </div>
+
+        <p class="text-white/90 text-lg sm:text-xl mt-8 italic font-serif">
+          Unbiased Journalism, Empowered Identity
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+     PRESIDENT'S MESSAGE - BILINGUAL
+     =============================== -->
+  <section class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-accent/10 border border-accent/30 rounded-sm mb-6"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >Leadership</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          President's Message
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+
+        <!-- Language Toggle Tabs -->
+        <div class="flex justify-center gap-4 mt-8">
+          <button
+            id="englishTab"
+            class="lang-tab active px-8 py-3 rounded-lg font-semibold border-2 border-accent transition-all duration-300"
+          >
+            English
+          </button>
+          <button
+            id="hindiTab"
+            class="lang-tab px-8 py-3 rounded-lg font-semibold border-2 border-accent transition-all duration-300"
+          >
+            हिंदी
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+        <!-- President Photo -->
+        <div class="flex justify-center lg:justify-start">
+          <div class="relative">
+            <!-- Decorative Corner Frames -->
+            <div
+              class="absolute -top-4 -left-4 w-20 h-20 border-t-4 border-l-4 border-accent"
+            >
+            </div>
+            <div
+              class="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-accent"
+            >
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute -inset-2 bg-gradient-to-br from-accent via-primary to-primary-hover rounded-sm blur-sm opacity-30"
+              >
+              </div>
+              <img
+                src="../assets/images/president.jpg"
+                alt="President – Taj Press Club"
+                class="relative w-80 h-80 object-cover shadow-2xl border-4 border-accent"
+              />
+            </div>
+
+            <!-- President Name & Contact Info -->
+            <div class="mt-8 text-center bg-section-bg p-6 shadow-lg">
+              <h3 class="font-serif text-2xl font-bold text-text-heading mb-2">
+                Manoj Kumar Mishra
+              </h3>
+              <p class="text-lg font-semibold text-accent mb-1">
+                मनोज कुमार मिश्र
+              </p>
+              <p class="text-primary font-semibold mb-4">President / अध्यक्ष</p>
+              <div class="text-sm text-text-body space-y-2 border-t pt-4">
+                <p class="flex items-center justify-center gap-2">
+                  <span
+                    class="material-icons text-accent"
+                    style="font-size: 18px;">email</span
+                  >
+                  <span>manojhindustan123@gmail.com</span>
+                </p>
+                <p class="flex items-center justify-center gap-2">
+                  <span
+                    class="material-icons text-accent"
+                    style="font-size: 18px;">phone</span
+                  >
+                  <span>+91 9927100213</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message Content -->
+        <div class="lg:col-span-2 text-text-body">
+          <!-- ===============================
+             ENGLISH CONTENT
+             =============================== -->
+          <div id="englishContent" class="content-section">
+            <!-- Opening Quote -->
+            <div
+              class="relative bg-section-bg p-10 mb-8 border-l-8 border-primary shadow-lg"
+            >
+              <div
+                class="absolute -top-6 left-8 text-8xl text-accent/20 font-serif leading-none"
+              >
+                "
+              </div>
+              <p
+                class="relative font-serif italic text-xl sm:text-2xl text-text-heading leading-relaxed pt-8"
+              >
+                'अभी तो कारवाँ शुरू हुआ है, रुकेंगे हम नहीं,<br />
+                इरादों की ये आँधी है, झुकेंगे हम नहीं।।<br />
+                ताज प्रेस क्लब लिखेगा अब नए अध्याय,<br />
+                वक़्त गवाह बनेगा, थकेंगे हम नहीं।।'
+              </p>
+            </div>
+
+            <!-- Preview Content -->
+            <div id="englishPreview">
+              <p class="mb-6 text-lg leading-relaxed font-serif">
+                <strong>Respected Journalist Colleagues,</strong>
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                Taj Press Club, Agra is not merely an institution, but a strong
+                platform representing the unity, self-respect, and fearless
+                expression of journalists associated with the print and
+                electronic media of the district. Registered under the name Taj
+                Press Club Agra with the Chits, Firms and Societies Department,
+                Agra, the institution has consistently served as a guardian of
+                the dignity, freedom, and responsibility of journalism.
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                From its inception to the present day, the Club has transformed
+                challenges into opportunities. Four years ago, the collapse of
+                one wall of the building due to heavy rainfall was not just a
+                structural loss, but a test of our collective determination.
+              </p>
+            </div>
+
+            <!-- Full Content (Hidden Initially) -->
+            <div id="englishFull" class="hidden-content">
+              <p class="mb-6 text-lg leading-relaxed">
+                At that time, as Vice President, I resolved that the building
+                would be restored as a symbol of strength, pride, and dignity.
+                Through constructive dialogue with senior authorities and the
+                cooperation of the Municipal Corporation, an amount of
+                approximately ₹20 lakh was sanctioned. This enabled the
+                construction of two new rooms, installation of a false ceiling
+                in the main hall, and beautification of the entrance with red
+                sandstone, giving the Club a renewed, grand, and distinctive
+                identity.
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                Recognizing this commitment to development, my fellow
+                journalists entrusted me with the responsibility of the
+                President's office in the elections held on 18 October 2025.
+                This position is not merely an honor for me, but a significant
+                responsibility. Since then, the pace of development of the Club
+                has gained unprecedented momentum. With the support of senior
+                authorities, more than ₹50 lakh has been sanctioned by the
+                Municipal Corporation, laying the foundation for the
+                comprehensive transformation of Taj Press Club.
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                Under this development plan, the main hall is being upgraded
+                with modern facilities, along with the construction of a new
+                executive committee room, waiting room, canteen, and the
+                reconstruction of dilapidated rooms. Additionally, work is
+                underway on facilities in the upper portion of the building,
+                including a bar and canteen, along with other essential
+                infrastructure. Approval has also been granted for modern
+                furniture and a high-quality sound system, ensuring that the
+                Club is well-equipped to meet future requirements.
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                Efforts are also being made to establish a well-equipped library
+                containing reference books, official records of events and
+                meetings related to the Agra Division, and a comprehensive
+                information bank covering the geographical and historical
+                significance of the region. This library will also house books
+                related to journalism, along with newspapers and magazines. The
+                Club will be equipped with Wi-Fi facilities, and computers will
+                be installed to enable journalists to work efficiently from the
+                premises.
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                Taj Press Club is not limited to being a physical structure; it
+                is a center for dialogue, creativity, and social awareness.
+                Grand events have been organized on national and cultural
+                occasions such as Independence Day, New Year, Makar Sankranti,
+                and Republic Day. On the occasion of New Year, for the first
+                time, founders and former Presidents were honored in the
+                presence of public representatives and senior officials,
+                followed by a dinner, paying tribute to the rich legacy of the
+                Club.
+              </p>
+
+              <p class="mb-8 text-lg leading-relaxed">
+                The newly elected executive committee is working with full
+                energy, transparency, and a strong spirit of teamwork. In the
+                future, seminars, dialogues, and training programs will be
+                organized to further strengthen the intellectual and
+                professional capabilities of journalists. With a clear blueprint
+                in place, we are confident that Taj Press Club, Agra will
+                continue to move forward as a shining symbol of the dignity of
+                journalism.
+              </p>
+
+              <!-- Closing Quote -->
+              <div
+                class="relative bg-section-bg p-10 mb-8 border-l-8 border-accent shadow-lg"
+              >
+                <div
+                  class="absolute -top-6 left-8 text-8xl text-accent/20 font-serif leading-none"
+                >
+                  "
+                </div>
+                <p
+                  class="relative font-serif italic text-xl sm:text-2xl text-text-heading leading-relaxed pt-8"
+                >
+                  'हम कलम के सिपाही हैं, झुकना हमें नहीं आता,<br />
+                  सच की राह में चलकर, थकना हमें नहीं आता।।<br />
+                  ताज प्रेस क्लब की पहचान यही कहती है,<br />
+                  अंधेरों से लड़ना है, रुकना हमें नहीं आता।।'
+                </p>
+              </div>
+
+              <!-- Signature -->
+              <div class="text-right mt-8">
+                <p class="font-serif text-xl font-bold text-primary mb-1">
+                  Manoj Kumar Mishra
+                </p>
+                <p class="text-lg text-accent font-semibold mb-1">President</p>
+                <p class="text-base text-text-body">Taj Press Club, Agra</p>
+                <div class="mt-4 text-sm text-text-body">
+                  <p class="flex items-center justify-end gap-2">
+                    <span
+                      class="material-icons text-accent"
+                      style="font-size: 16px;">email</span
+                    >
+                    <span>manojhindustan123@gmail.com</span>
+                  </p>
+                  <p class="flex items-center justify-end gap-2">
+                    <span
+                      class="material-icons text-accent"
+                      style="font-size: 16px;">phone</span
+                    >
+                    <span>+91 9927100213</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Read More Button - English -->
+            <div class="text-center mt-8">
+              <button
+                id="englishReadMore"
+                class="read-more-btn px-8 py-4 bg-accent text-primary font-bold text-lg rounded-lg hover:bg-accent/90 transform hover:scale-105 transition-all shadow-xl border-2 border-accent"
+              >
+                <span class="flex items-center justify-center gap-2">
+                  <span id="englishBtnText">Read More</span>
+                  <svg
+                    id="englishBtnIcon"
+                    class="w-5 h-5 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ===============================
+             HINDI CONTENT
+             =============================== -->
+          <div id="hindiContent" class="content-section hidden-content">
+            <!-- Opening Quote -->
+            <div
+              class="relative bg-section-bg p-10 mb-8 border-l-8 border-primary shadow-lg"
+            >
+              <div
+                class="absolute -top-6 left-8 text-8xl text-accent/20 font-serif leading-none"
+              >
+                "
+              </div>
+              <p
+                class="relative font-serif italic text-xl sm:text-2xl text-text-heading leading-relaxed pt-8"
+              >
+                'अभी तो कारवाँ शुरू हुआ है, रुकेंगे हम नहीं,<br />
+                इरादों की ये आँधी है, झुकेंगे हम नहीं।।<br />
+                ताज प्रेस क्लब लिखेगा अब नए अध्याय,<br />
+                वक़्त गवाह बनेगा, थकेंगे हम नहीं।।'
+              </p>
+            </div>
+
+            <!-- Preview Content -->
+            <div id="hindiPreview">
+              <p class="mb-6 text-lg leading-relaxed font-serif">
+                <strong>सम्मानित पत्रकार साथियों,</strong>
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                ताज प्रेस क्लब आगरा केवल एक संस्था नहीं, बल्कि जनपद के प्रिंट
+                एवं इलेक्ट्रॉनिक मीडिया से जुड़े पत्रकारों की एकता, आत्मसम्मान
+                और निर्भीक अभिव्यक्ति का सशक्त मंच है। ताज प्रेस क्लब आगरा के
+                नाम से चिट, फर्म्स एंड सोसायटीज, आगरा में विधिवत पंजीकृत यह
+                संस्था पत्रकारिता की गरिमा, स्वतंत्रता और उत्तरदायित्व की निरंतर
+                प्रहरी रही है।
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                स्थापना से लेकर आज तक क्लब ने चुनौतियों को अवसर में बदला है। चार
+                वर्ष पूर्व बारिश के कारण भवन की एक दीवार गिरना केवल एक
+                संरचनात्मक क्षति नहीं थी, बल्कि हमारी सामूहिक दृढ़ता की परीक्षा
+                थी।
+              </p>
+            </div>
+
+            <!-- Full Content (Hidden Initially) -->
+            <div id="hindiFull" class="hidden-content">
+              <p class="mb-6 text-lg leading-relaxed">
+                उस समय उपाध्यक्ष के रूप में मैंने संकल्प लिया कि यह भवन फिर से
+                मजबूती और सम्मान का प्रतीक बनेगा। उच्चाधिकारियों से सार्थक संवाद
+                और नगर निगम के सहयोग से लगभग 20 लाख रुपये की धनराशि स्वीकृत कराई
+                गई। इस राशि से दो नए कमरे, मुख्य हाल में फॉल सीलिंग तथा प्रवेश
+                द्वार को रेड सैंड स्टोन से सुसज्जित कर क्लब को एक नया, भव्य और
+                पहचान योग्य स्वरूप दिया गया।
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                विकास की इसी प्रतिबद्ध सोच को देखते हुए पत्रकार साथियों ने 18
+                अक्टूबर 2025 को हुए चुनाव में मुझे अध्यक्ष पद की जिम्मेदारी
+                सौंपी। यह पद मेरे लिए सम्मान से अधिक उत्तरदायित्व का है। इसके
+                पश्चात क्लब के विकास को अभूतपूर्व गति मिली। उच्चाधिकारियों के
+                सहयोग से नगर निगम द्वारा 50 लाख रुपये से अधिक की धनराशि स्वीकृत
+                कराई गई, जिससे ताज प्रेस क्लब के संपूर्ण कायाकल्प की नींव रखी
+                गई।
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                इस योजना के अंतर्गत मुख्य हाल को अत्याधुनिक स्वरूप देना, नया
+                कार्यकारिणी कक्ष, वेटिंग रूम, कैंटीन, जीर्ण-शीर्ण कमरों का
+                पुनर्निर्माण, ऊपरी हिस्से में बार व कैंटीन सहित अन्य आवश्यक
+                कार्य कराए जा रहे हैं। साथ ही आधुनिक फर्नीचर एवं उच्च गुणवत्ता
+                का साउंड सिस्टम भी स्वीकृत कराया गया है, जिससे क्लब भविष्य की
+                आवश्यकताओं के अनुरूप सुसज्जित हो सके।
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                साथ ही इस बात की कोशिश भी है कि एक पुस्तकालय भी स्थापित हो,
+                जिसमें सन्दर्भ ग्रन्थ, आगरा मण्डल से जुड़ी घटनाओं व मीटिंगों के
+                आधिकारिक बिन्दु, भौगोलिक एवं ऐतिहासिक महत्व की ऐसी सूचना बैंक
+                हो, जो पूर्णत: की परिभाषा में मानी जाए। इसमें पत्रकारिता से
+                सम्बन्धित पुस्तकें एवं समाचार पत्र व पत्रिकायें भी हों। क्लब को
+                बाइफाई से युक्त कराया जाएगा। कुछ कंप्यूटर भी रखवाए जाएंगे, जिससे
+                पत्रकार साथी यहां बैठकर अपना कार्य कर सकें।
+              </p>
+
+              <p class="mb-6 text-lg leading-relaxed">
+                ताज प्रेस क्लब केवल भवन तक ही सीमित नहीं है, यह संवाद, सृजन और
+                सामाजिक चेतना का केंद्र है। 15 अगस्त, नववर्ष, मकर संक्रांति और
+                गणतंत्र दिवस जैसे राष्ट्रीय एवं सांस्कृतिक अवसरों पर भव्य आयोजन
+                कराए गए। नववर्ष के अवसर पर पहली बार जनप्रतिनिधियों एवं
+                उच्चाधिकारियों की गरिमामयी उपस्थिति में संस्थापक सदस्यों और
+                पूर्व अध्यक्षों का सम्मान तथा रात्रि भोज आयोजित कर क्लब के
+                इतिहास को सम्मान देने का कार्य किया गया।
+              </p>
+
+              <p class="mb-8 text-lg leading-relaxed">
+                नव-निर्वाचित कार्यकारिणी पूरी ऊर्जा, पारदर्शिता और टीम भावना के
+                साथ कार्य कर रही है। भविष्य में सेमिनार, संवाद और प्रशिक्षण
+                कार्यक्रमों के माध्यम से पत्रकारों की वैचारिक और व्यावसायिक
+                क्षमता को और सशक्त किया जाएगा। क्लब का स्पष्ट ब्लू-प्रिंट तैयार
+                है और यह विश्वास है कि ताज प्रेस क्लब आगरा पत्रकारिता की गरिमा
+                का उज्ज्वल प्रतीक बनकर निरंतर आगे बढ़ता रहेगा।
+              </p>
+
+              <!-- Closing Quote -->
+              <div
+                class="relative bg-section-bg p-10 mb-8 border-l-8 border-accent shadow-lg"
+              >
+                <div
+                  class="absolute -top-6 left-8 text-8xl text-accent/20 font-serif leading-none"
+                >
+                  "
+                </div>
+                <p
+                  class="relative font-serif italic text-xl sm:text-2xl text-text-heading leading-relaxed pt-8"
+                >
+                  'हम कलम के सिपाही हैं, झुकना हमें नहीं आता,<br />
+                  सच की राह में चलकर, थकना हमें नहीं आता।।<br />
+                  ताज प्रेस क्लब की पहचान यही कहती है,<br />
+                  अंधेरों से लड़ना है, रुकना हमें नहीं आता।।'
+                </p>
+              </div>
+
+              <!-- Signature -->
+              <div class="text-right mt-8">
+                <p class="font-serif text-xl font-bold text-primary mb-1">
+                  मनोज कुमार मिश्र
+                </p>
+                <p class="text-lg text-accent font-semibold mb-1">अध्यक्ष</p>
+                <p class="text-base text-text-body">ताज प्रेस क्लब, आगरा</p>
+                <div class="mt-4 text-sm text-text-body">
+                  <p class="flex items-center justify-end gap-2">
+                    <span
+                      class="material-icons text-accent"
+                      style="font-size: 16px;">email</span
+                    >
+                    <span>manojhindustan123@gmail.com</span>
+                  </p>
+                  <p class="flex items-center justify-end gap-2">
+                    <span
+                      class="material-icons text-accent"
+                      style="font-size: 16px;">phone</span
+                    >
+                    <span>+91 9927100213</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Read More Button - Hindi -->
+            <div class="text-center mt-8">
+              <button
+                id="hindiReadMore"
+                class="read-more-btn px-8 py-4 bg-accent text-primary font-bold text-lg rounded-lg hover:bg-accent/90 transform hover:scale-105 transition-all shadow-xl border-2 border-accent"
+              >
+                <span class="flex items-center justify-center gap-2">
+                  <span id="hindiBtnText">और पढ़ें</span>
+                  <svg
+                    id="hindiBtnIcon"
+                    class="w-5 h-5 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       THE TRANSFORMATION
+       =============================== -->
+  <section class="w-full bg-section-bg py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-primary/10 border border-primary/30 rounded-sm mb-6"
+        >
+          <span class="text-primary font-bold text-sm tracking-widest uppercase"
+            >Our Journey</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          The Transformation
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4 mb-6">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+        <p class="font-serif text-xl text-text-muted italic">
+          Turning challenges into opportunities
+        </p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white overflow-hidden shadow-xl hover:shadow-2xl transition-all group"
+        >
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="../assets/images/old-building.jpg"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              alt="Old Building"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            >
+            </div>
+            <div
+              class="absolute top-6 left-6 bg-primary text-white px-6 py-3 font-bold text-lg border-2 border-white"
+            >
+              2021
+            </div>
+          </div>
+          <div class="p-8 border-t-4 border-primary">
+            <h3 class="font-serif font-bold text-2xl text-primary mb-3">
+              4 Years Ago
+            </h3>
+            <p class="text-text-body leading-relaxed">
+              Wall Collapse & Structural Challenges
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white overflow-hidden shadow-xl hover:shadow-2xl transition-all group"
+        >
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="../assets/images/renovation.jpg"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              alt="Renovation"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            >
+            </div>
+            <div
+              class="absolute top-6 left-6 bg-accent text-primary px-6 py-3 font-bold text-lg border-2 border-white"
+            >
+              2022-2024
+            </div>
+          </div>
+          <div class="p-8 border-t-4 border-accent">
+            <h3 class="font-serif font-bold text-2xl text-primary mb-3">
+              Reconstruction Phase
+            </h3>
+            <p class="text-text-body leading-relaxed">
+              Strategic Planning & Restoration
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white overflow-hidden shadow-xl hover:shadow-2xl transition-all group border-4 border-accent"
+        >
+          <div class="relative h-72 overflow-hidden">
+            <img
+              src="../assets/images/new-building.jpg"
+              class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+              alt="New Building"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            >
+            </div>
+            <div
+              class="absolute top-6 left-6 bg-accent text-primary px-6 py-3 font-bold text-lg border-2 border-primary"
+            >
+              2025
+            </div>
+            <div
+              class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm text-primary px-4 py-2 rounded-full font-bold text-sm"
+            >
+              ✨ Current
+            </div>
+          </div>
+          <div class="p-8 bg-gradient-to-br from-accent/5 to-transparent">
+            <h3 class="font-serif font-bold text-2xl text-primary mb-3">
+              Today
+            </h3>
+            <p class="text-text-body leading-relaxed">
+              Modern & Dignified Press Club
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       MODERN INFRASTRUCTURE
+       =============================== -->
+  <!-- <section id="infrastructure" class="w-full bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4">
+    
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-accent/10 border border-accent/30 rounded-sm mb-6"
+        >
+          <span class="text-accent font-bold text-sm tracking-widest uppercase"
+            >Facilities</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          Modern Infrastructure
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="group relative bg-section-bg p-10 shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary"
+        >
+          
+          <div class="absolute top-0 right-0 w-16 h-16 bg-accent/10"></div>
+
+          <div
+            class="relative w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <svg
+              class="w-10 h-10 text-accent"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-text-heading mb-3">
+            Modern Library
+          </h3>
+          <p class="text-text-body leading-relaxed">
+            Journals, newspapers & digital records
+          </p>
+        </div>
+
+        <div
+          class="group relative bg-section-bg p-10 shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary"
+        >
+          <div class="absolute top-0 right-0 w-16 h-16 bg-accent/10"></div>
+
+          <div
+            class="relative w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <svg
+              class="w-10 h-10 text-accent"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-text-heading mb-3">
+            Tech Ready
+          </h3>
+          <p class="text-text-body leading-relaxed">
+            High-speed Wi-Fi & workstations
+          </p>
+        </div>
+
+        <div
+          class="group relative bg-section-bg p-10 shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary"
+        >
+          <div class="absolute top-0 right-0 w-16 h-16 bg-accent/10"></div>
+
+          <div
+            class="relative w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <svg
+              class="w-10 h-10 text-accent"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-text-heading mb-3">
+            Executive Spaces
+          </h3>
+          <p class="text-text-body leading-relaxed">
+            Committee room & grand hall
+          </p>
+        </div>
+
+        <div
+          class="group relative bg-section-bg p-10 shadow-lg hover:shadow-2xl transition-all border-t-8 border-primary"
+        >
+          <div class="absolute top-0 right-0 w-16 h-16 bg-accent/10"></div>
+
+          <div
+            class="relative w-20 h-20 bg-gradient-to-br from-primary to-primary-hover rounded-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg"
+          >
+            <svg
+              class="w-10 h-10 text-accent"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-text-heading mb-3">
+            Recreation
+          </h3>
+          <p class="text-text-body leading-relaxed">
+            Canteen, bar & waiting lounge
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ===============================
+       RECENT EVENTS & LEGACY
+       =============================== -->
+  <section class="w-full bg-section-bg py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <div
+          class="inline-block px-5 py-2 bg-primary/10 border border-primary/30 rounded-sm mb-6"
+        >
+          <span class="text-primary font-bold text-sm tracking-widest uppercase"
+            >Gallery</span
+          >
+        </div>
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-bold text-text-heading mb-4"
+        >
+          Recent Events & Legacy
+        </h2>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <div class="w-16 h-px bg-accent"></div>
+          <div class="w-3 h-3 rotate-45 bg-accent"></div>
+          <div class="w-16 h-px bg-accent"></div>
+        </div>
+      </div>
+
+      <div class="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
+        <div class="break-inside-avoid group">
+          <div class="relative overflow-hidden shadow-xl rounded-xl">
+            <img
+              src="../assets/images/event1.jpg"
+              class="w-full transform group-hover:scale-105 transition-transform duration-500"
+              alt="नव वर्ष आयोजन"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+            </div>
+          </div>
+
+          <!-- Event Content -->
+          <div class="mt-4 p-4 bg-white rounded-lg shadow">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              नव वर्ष आयोजन 2026
+            </h3>
+
+            <p class="text-sm text-gray-700 leading-relaxed">
+              <strong>4 जनवरी 2026</strong> को क्लब में नव वर्ष के आयोजन के अवसर पर
+              रात्रि भोज का आयोजन किया गया। इस अवसर पर पूर्व अध्यक्षों एवं संस्थापक
+              सदस्यों का सम्मान किया गया।
+            </p>
+
+            <p class="text-sm text-gray-700 mt-2 leading-relaxed">
+              कार्यक्रम में <strong>विधायक विजय शिवहरे</strong>,
+              <strong>डॉ. धर्मपाल सिंह</strong>,
+              <strong>डीसीपी सिटी अली अब्बास</strong> एवं
+              <strong>एडीसीपी आदित्य सिंह</strong> विशेष रूप से उपस्थित रहे।
+            </p>
+          </div>
+        </div>
+
+        <div class="break-inside-avoid group">
+          <div class="relative overflow-hidden shadow-xl rounded-xl">
+            <img
+              src="../assets/images/event2.jpg"
+              class="w-full transform group-hover:scale-105 transition-transform duration-500"
+              alt="मकर संक्रांति आयोजन"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+            </div>
+          </div>
+
+          <!-- Event Content -->
+          <div class="mt-4 p-4 bg-white rounded-lg shadow">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              मकर संक्रांति महोत्सव
+            </h3>
+
+            <p class="text-sm text-gray-700 leading-relaxed">
+              <strong>15 जनवरी 2026</strong> को मकर संक्रांति का पर्व क्लब परिसर में
+              खिचड़ी भोज के साथ हर्षोल्लास से मनाया गया।
+            </p>
+
+            <p class="text-sm text-gray-700 mt-2 leading-relaxed">
+              इस अवसर पर <strong>विधायक विजय शिवहरे</strong>,
+              <strong>पुरुषोत्तम खंडेलवाल</strong>,
+              <strong>जिलाधिकारी अरविन्द मल्लापा बंगारी</strong>,
+              <strong>एडीएम प्रोटोकॉल प्रशांत तिवारी</strong> एवं
+              <strong>जिला सूचना अधिकारी शीलेन्द्र शर्मा</strong> उपस्थित रहे।
+            </p>
+          </div>
+        </div>
+
+        <div class="break-inside-avoid group">
+          <div class="relative overflow-hidden shadow-xl rounded-xl">
+            <img
+              src="../assets/images/event3.jpg"
+              class="w-full transform group-hover:scale-105 transition-transform duration-500"
+              alt="दीपावली आयोजन"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+            </div>
+          </div>
+
+          <!-- Event Content -->
+          <div class="mt-4 p-4 bg-white rounded-lg shadow">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              दीप पर्व दीपावली
+            </h3>
+
+            <p class="text-sm text-gray-700 leading-relaxed">
+              दीप पर्व दीपावली क्लब परिसर में सभी सदस्यों द्वारा आपसी सहयोग एवं
+              उल्लास के साथ मनाई गई। इस अवसर पर क्लब परिसर दीपों और रोशनी से
+              जगमगा उठा।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-16">
+        <div
+          class="inline-block px-8 py-4 bg-white border-2 border-accent shadow-lg"
+        >
+          <p class="font-serif text-xl italic text-text-heading">
+            Preserving legacy while embracing the future
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+       TRAINING & DEVELOPMENT
+       =============================== -->
+  <section
+    class="w-full relative bg-gradient-to-br from-primary via-primary-hover to-primary py-20 overflow-hidden"
+  >
+    <!-- Decorative Pattern -->
+    <div
+      class="absolute inset-0 opacity-5"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\"
+      80\"
+      height='\"80\"'
+      viewBox='\"0'
+      0
+      80
+      80\"
+      xmlns='\"http://www.w3.org/2000/svg\"%3E%3Cpath'
+      d='\"M0'
+      0h80v80H0z\"
+      fill='\"none\"/%3E%3Cpath'
+      d='\"M0'
+      40h80M40
+      0v80\"
+      stroke='\"%23D4AF37\"'
+      stroke-width='\"1\"/%3E%3C/svg%3E&apos;);"'
+    >
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-4 text-center text-white">
+      <div
+        class="inline-block px-5 py-2 bg-white/20 border-2 border-accent rounded-sm mb-8"
+      >
+        <span class="text-accent font-bold text-sm tracking-widest uppercase"
+          >Upcoming Programs</span
+        >
+      </div>
+
+      <h2 class="font-serif text-4xl sm:text-5xl font-bold mb-6">
+        Training & Development
+      </h2>
+
+      <div class="max-w-3xl mx-auto mb-10">
+        <div
+          class="h-px bg-gradient-to-r from-transparent via-accent to-transparent mb-6"
+        >
+        </div>
+        <p class="text-xl leading-relaxed opacity-95">
+          Aane wale seminars, workshops aur professional journalism training
+          programs ke through media ko aur majboot banana.
+        </p>
+        <div
+          class="h-px bg-gradient-to-r from-transparent via-accent to-transparent mt-6"
+        >
+        </div>
+      </div>
+
+      <a
+        href="/events/"
+        class="inline-block px-12 py-5 bg-accent text-primary font-bold text-lg rounded-sm hover:bg-accent-hover transform hover:scale-105 transition-all shadow-2xl border-2 border-accent hover:border-accent-hover"
+      >
+        Stay Updated with Seminars →
+      </a>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  .lang-tab {
+    cursor: pointer;
+  }
+
+  .lang-tab.active {
+    background: #d97706;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+  }
+
+  .lang-tab:hover:not(.active) {
+    background: #f3f4f6;
+  }
+
+  .read-more-btn:hover {
+    box-shadow: 0 6px 20px rgba(217, 119, 6, 0.4);
+  }
+
+  .hidden-content {
+    display: none;
+  }
+
+  .content-section {
+    font-family: "Noto Sans Devanagari", sans-serif;
+  }
+
+  #englishContent {
+    font-family: "Merriweather", serif;
+  }
+</style>
+
+<script>
+  // Language Toggle Functionality
+  const englishTab = document.getElementById("englishTab");
+  const hindiTab = document.getElementById("hindiTab");
+  const englishContent = document.getElementById("englishContent");
+  const hindiContent = document.getElementById("hindiContent");
+
+  function switchLanguage(lang) {
+    if (lang === "english") {
+      englishTab?.classList.add("active");
+      hindiTab?.classList.remove("active");
+      englishContent?.classList.remove("hidden-content");
+      hindiContent?.classList.add("hidden-content");
+    } else {
+      hindiTab?.classList.add("active");
+      englishTab?.classList.remove("active");
+      hindiContent?.classList.remove("hidden-content");
+      englishContent?.classList.add("hidden-content");
+    }
+  }
+
+  englishTab?.addEventListener("click", () => switchLanguage("english"));
+  hindiTab?.addEventListener("click", () => switchLanguage("hindi"));
+
+  // Read More Toggle - English
+  const englishReadMore = document.getElementById("englishReadMore");
+  const englishFull = document.getElementById("englishFull");
+  const englishBtnText = document.getElementById("englishBtnText");
+  const englishBtnIcon = document.getElementById("englishBtnIcon");
+  let englishExpanded = false;
+
+  englishReadMore?.addEventListener("click", () => {
+    englishExpanded = !englishExpanded;
+    if (englishExpanded) {
+      englishFull?.classList.remove("hidden-content");
+      if (englishBtnText) englishBtnText.textContent = "Read Less";
+      englishBtnIcon?.classList.add("rotate-180");
+    } else {
+      englishFull?.classList.add("hidden-content");
+      if (englishBtnText) englishBtnText.textContent = "Read More";
+      englishBtnIcon?.classList.remove("rotate-180");
+      // Scroll back to preview
+      document.getElementById("englishPreview")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+
+  // Read More Toggle - Hindi
+  const hindiReadMore = document.getElementById("hindiReadMore");
+  const hindiFull = document.getElementById("hindiFull");
+  const hindiBtnText = document.getElementById("hindiBtnText");
+  const hindiBtnIcon = document.getElementById("hindiBtnIcon");
+  let hindiExpanded = false;
+
+  hindiReadMore?.addEventListener("click", () => {
+    hindiExpanded = !hindiExpanded;
+    if (hindiExpanded) {
+      hindiFull?.classList.remove("hidden-content");
+      if (hindiBtnText) hindiBtnText.textContent = "कम पढ़ें";
+      hindiBtnIcon?.classList.add("rotate-180");
+    } else {
+      hindiFull?.classList.add("hidden-content");
+      if (hindiBtnText) hindiBtnText.textContent = "और पढ़ें";
+      hindiBtnIcon?.classList.remove("rotate-180");
+      // Scroll back to preview
+      document.getElementById("hindiPreview")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+</script>

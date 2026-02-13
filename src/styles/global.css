@@ -1,0 +1,54 @@
+/* ===============================
+   Google Fonts Import (MUST BE FIRST)
+   =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* ===============================
+   Tailwind Import
+   =============================== */
+@import "tailwindcss";
+
+/* ===============================
+   Tailwind v4 Custom Theme Tokens
+   Taj Press Club – Royal Maroon & Gold
+   =============================== */
+@theme {
+   /* ===============================
+     Brand Colors
+     =============================== */
+
+   /* Primary – Royal Maroon */
+   --color-primary: #800000;
+   --color-primary-hover: #6B0000;
+
+   /* Accent – Royal Gold */
+   --color-accent: #D4AF37;
+   --color-accent-hover: #C9A227;
+
+   /* ===============================
+     Text Colors
+     =============================== */
+   --color-text-body: #3A3A3A;
+   --color-text-heading: #1F2937;
+   --color-text-muted: #6B7280;
+
+   /* ===============================
+     Background Colors
+     =============================== */
+   --color-section-bg: #FAF7F2;
+   /* heritage cream */
+   --color-card-bg: #FFFFFF;
+
+   /* ===============================
+     Border Colors
+     =============================== */
+   --color-border-soft: #E5E7EB;
+
+}
+
+/* ===============================
+   Font Utilities
+   =============================== */
+.font-pacifico {
+   font-family: 'Pacifico', cursive;
+}

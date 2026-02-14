@@ -15,27 +15,6 @@ import Layout from "../layouts/Layout.astro";
     >
     </div>
 
-    <!-- Decorative Pattern -->
-    <div
-      class="absolute inset-0 opacity-5"
-      style="background-image: url('data:image/svg+xml,%3Csvg width=\"
-      60\"
-      height='\"60\"'
-      viewBox='\"0'
-      0
-      60
-      60\"
-      xmlns='\"http://www.w3.org/2000/svg\"%3E%3Cpath'
-      d='\"M30'
-      0l30
-      30-30
-      30L0
-      30z\"
-      fill='\"%23D4AF37\"'
-      fill-opacity='\"0.4\"%3E%3C/path%3E%3C/svg%3E&apos;);"'
-    >
-    </div>
-
     <!-- Content -->
     <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
       <div class="mb-6">
@@ -69,167 +48,27 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- ===============================
-       CONTACT INFORMATION CARDS
-       =============================== -->
-  <section class="w-full bg-white py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-24 relative z-10">
-        <!-- Phone Card -->
-        <div
-          class="bg-white rounded-lg shadow-2xl p-8 border-t-4 border-accent hover:shadow-xl transition-all group"
-        >
-          <div
-            class="w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
-          >
-            <svg
-              class="w-8 h-8 text-accent"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              ></path>
-            </svg>
-          </div>
-          <h3
-            class="font-serif text-xl font-bold text-text-heading mb-4 text-center"
-          >
-            Phone
-          </h3>
-          <div class="text-center space-y-2">
-            <a
-              href="tel:+915622123456"
-              class="block text-primary hover:text-accent transition-colors font-semibold"
-            >
-              +91-562-212-3456
-            </a>
-            <a
-              href="tel:+919876543210"
-              class="block text-primary hover:text-accent transition-colors font-semibold"
-            >
-              +91-98765-43210
-            </a>
-          </div>
-          <p class="text-text-muted text-sm mt-4 text-center">
-            Mon - Sat: 10:00 AM - 6:00 PM
-          </p>
-        </div>
-
-        <!-- Email Card -->
-        <div
-          class="bg-white rounded-lg shadow-2xl p-8 border-t-4 border-accent hover:shadow-xl transition-all group"
-        >
-          <div
-            class="w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
-          >
-            <svg
-              class="w-8 h-8 text-accent"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              ></path>
-            </svg>
-          </div>
-          <h3
-            class="font-serif text-xl font-bold text-text-heading mb-4 text-center"
-          >
-            Email
-          </h3>
-          <div class="text-center space-y-2">
-            <a
-              href="mailto:info@tajpressclub.org"
-              class="block text-primary hover:text-accent transition-colors font-semibold break-all"
-            >
-              info@tajpressclub.org
-            </a>
-            <a
-              href="mailto:membership@tajpressclub.org"
-              class="block text-primary hover:text-accent transition-colors font-semibold break-all"
-            >
-              membership@tajpressclub.org
-            </a>
-          </div>
-          <p class="text-text-muted text-sm mt-4 text-center">
-            We reply within 24 hours
-          </p>
-        </div>
-
-        <!-- Location Card -->
-        <div
-          class="bg-white rounded-lg shadow-2xl p-8 border-t-4 border-accent hover:shadow-xl transition-all group"
-        >
-          <div
-            class="w-16 h-16 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform"
-          >
-            <svg
-              class="w-8 h-8 text-accent"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-          </div>
-          <h3
-            class="font-serif text-xl font-bold text-text-heading mb-4 text-center"
-          >
-            Visit Us
-          </h3>
-          <p class="text-text-body text-center leading-relaxed">
-            Taj Press Club<br />
-            Near Taj Mahal,<br />
-            Agra, Uttar Pradesh<br />
-            Pin Code: 282001
-          </p>
-          <p class="text-text-muted text-sm mt-4 text-center">
-            Open 6 days a week
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===============================
-       CONTACT FORM & MAP SECTION
+       DETAILED CONTACT INFO & MAP SECTION
        =============================== -->
   <section class="w-full bg-section-bg py-20">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Contact Form -->
-        <div class="bg-white rounded-lg shadow-xl p-8 lg:p-12">
+        <!-- LEFT: Detailed Contact Info (replaces form) -->
+        <div class="space-y-6">
+          <!-- Section Header -->
           <div class="mb-8">
             <div
               class="inline-block px-4 py-1 bg-accent/10 border border-accent/30 rounded-sm mb-4"
             >
               <span
                 class="text-accent font-bold text-sm tracking-widest uppercase"
-                >Send Message</span
+                >Our Details</span
               >
             </div>
             <h2
               class="font-serif text-3xl sm:text-4xl font-bold text-text-heading mb-3"
             >
-              Get in Touch
+              Reach Us Directly
             </h2>
             <div class="flex items-center gap-3 mb-4">
               <div class="w-16 h-px bg-accent"></div>
@@ -237,151 +76,197 @@ import Layout from "../layouts/Layout.astro";
               <div class="w-16 h-px bg-accent"></div>
             </div>
             <p class="text-text-body">
-              Apna message bhejein aur hum jald hi aapse sampark karenge.
+              Kisi bhi inquiry ke liye, hum se seedha sampark karein.
             </p>
           </div>
 
-          <form id="contactForm" class="space-y-6">
-            <!-- Name -->
-            <div>
-              <label
-                for="name"
-                class="block text-sm font-bold text-text-heading mb-2 uppercase tracking-wide"
-              >
-                Full Name <span class="text-accent">*</span>
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                class="w-full px-4 py-3 border-2 border-border-soft focus:border-accent focus:outline-none rounded-sm transition-colors"
-                placeholder="Your name"
-              />
-            </div>
-
-            <!-- Email -->
-            <div>
-              <label
-                for="email"
-                class="block text-sm font-bold text-text-heading mb-2 uppercase tracking-wide"
-              >
-                Email Address <span class="text-accent">*</span>
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full px-4 py-3 border-2 border-border-soft focus:border-accent focus:outline-none rounded-sm transition-colors"
-                placeholder="your.email@example.com"
-              />
-            </div>
-
-            <!-- Phone -->
-            <div>
-              <label
-                for="phone"
-                class="block text-sm font-bold text-text-heading mb-2 uppercase tracking-wide"
-              >
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                class="w-full px-4 py-3 border-2 border-border-soft focus:border-accent focus:outline-none rounded-sm transition-colors"
-                placeholder="+91 98765 43210"
-              />
-            </div>
-
-            <!-- Subject -->
-            <div>
-              <label
-                for="subject"
-                class="block text-sm font-bold text-text-heading mb-2 uppercase tracking-wide"
-              >
-                Subject <span class="text-accent">*</span>
-              </label>
-              <select
-                id="subject"
-                name="subject"
-                required
-                class="w-full px-4 py-3 border-2 border-border-soft focus:border-accent focus:outline-none rounded-sm transition-colors bg-white"
-              >
-                <option value="">Select a subject</option>
-                <option value="membership">Membership Inquiry</option>
-                <option value="events">Events & Seminars</option>
-                <option value="general">General Inquiry</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <!-- Message -->
-            <div>
-              <label
-                for="message"
-                class="block text-sm font-bold text-text-heading mb-2 uppercase tracking-wide"
-              >
-                Message <span class="text-accent">*</span>
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                class="w-full px-4 py-3 border-2 border-border-soft focus:border-accent focus:outline-none rounded-sm transition-colors resize-none"
-                placeholder="Apna message yahan likhein..."></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <button
-              type="submit"
-              class="w-full bg-gradient-to-r from-accent to-accent-hover text-primary font-bold text-lg py-4 rounded-sm hover:shadow-xl transition-all border-2 border-accent flex items-center justify-center gap-3 group"
-            >
-              <span>Send Message</span>
-              <svg
-                class="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </button>
-          </form>
-
-          <!-- Success Message (Hidden by default) -->
+          <!-- Phone Detail Card -->
           <div
-            id="successMessage"
-            class="hidden mt-6 p-6 bg-green-50 border-2 border-green-500 rounded-sm"
+            class="bg-white rounded-lg shadow-xl p-7 border-l-4 border-accent hover:shadow-2xl transition-all group"
           >
-            <div class="flex items-center gap-3">
-              <svg
-                class="w-6 h-6 text-green-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            <div class="flex items-start gap-5">
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <p class="text-green-700 font-semibold">
-                Thank you! Your message has been sent successfully.
-              </p>
+                <svg
+                  class="w-7 h-7 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-serif text-xl font-bold text-text-heading mb-3">
+                  Phone
+                </h3>
+                <div class="space-y-2">
+                  <a
+                    href="tel:+915622123456"
+                    class="flex items-center gap-2 text-primary hover:text-accent transition-colors font-semibold text-lg group/link"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-accent flex-shrink-0"
+                    ></span>
+                    +91-562-212-3456
+                  </a>
+                  <a
+                    href="tel:+919876543210"
+                    class="flex items-center gap-2 text-primary hover:text-accent transition-colors font-semibold text-lg"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-accent flex-shrink-0"
+                    ></span>
+                    +91-98765-43210
+                  </a>
+                </div>
+                <p class="text-text-muted text-sm mt-3 flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-accent"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Mon - Sat: 10:00 AM - 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email Detail Card -->
+          <div
+            class="bg-white rounded-lg shadow-xl p-7 border-l-4 border-accent hover:shadow-2xl transition-all group"
+          >
+            <div class="flex items-start gap-5">
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              >
+                <svg
+                  class="w-7 h-7 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-serif text-xl font-bold text-text-heading mb-3">
+                  Email
+                </h3>
+                <div class="space-y-2">
+                  <a
+                    href="mailto:info@tajpressclub.org"
+                    class="flex items-center gap-2 text-primary hover:text-accent transition-colors font-semibold break-all"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-accent flex-shrink-0"
+                    ></span>
+                    info@tajpressclub.org
+                  </a>
+                  <a
+                    href="mailto:membership@tajpressclub.org"
+                    class="flex items-center gap-2 text-primary hover:text-accent transition-colors font-semibold break-all"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-accent flex-shrink-0"
+                    ></span>
+                    membership@tajpressclub.org
+                  </a>
+                </div>
+                <p class="text-text-muted text-sm mt-3 flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-accent"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  We reply within 24 hours
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visit Us Detail Card -->
+          <div
+            class="bg-white rounded-lg shadow-xl p-7 border-l-4 border-accent hover:shadow-2xl transition-all group"
+          >
+            <div class="flex items-start gap-5">
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-primary to-primary-hover rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              >
+                <svg
+                  class="w-7 h-7 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="font-serif text-xl font-bold text-text-heading mb-3">
+                  Visit Us
+                </h3>
+                <address
+                  class="not-italic text-text-body leading-relaxed space-y-1"
+                >
+                  <p class="font-semibold text-text-heading">Taj Press Club</p>
+                  <p>Near Taj Mahal,</p>
+                  <p>Agra, Uttar Pradesh</p>
+                  <p>Pin Code: 282001</p>
+                </address>
+                <p class="text-text-muted text-sm mt-3 flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-accent"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    ></path>
+                  </svg>
+                  Open 6 days a week
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Map & Additional Info -->
+        <!-- RIGHT: Map & Additional Info -->
         <div class="space-y-8">
           <!-- Google Map -->
           <div class="bg-white rounded-lg shadow-xl overflow-hidden h-96">
@@ -495,69 +380,4 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-
-  <!-- ===============================
-       CTA SECTION
-       =============================== -->
-  <section class="w-full bg-white py-16">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2
-        class="font-serif text-3xl sm:text-4xl font-bold text-text-heading mb-6"
-      >
-        Become a Member
-      </h2>
-      <p class="text-lg text-text-body mb-8 leading-relaxed">
-        Taj Press Club ka hissa banein aur journalism community ko majboot
-        karein
-      </p>
-      <a
-        href="/membership/"
-        class="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-accent to-accent-hover text-primary font-bold text-lg rounded-sm hover:shadow-xl transition-all border-2 border-accent"
-      >
-        <svg
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
-          ></path>
-        </svg>
-        Join the Club
-      </a>
-    </div>
-  </section>
 </Layout>
-
-<script>
-  // Contact Form Handling
-  const contactForm = document.getElementById("contactForm");
-  const successMessage = document.getElementById("successMessage");
-
-  if (contactForm && successMessage) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      // Here you would normally send the form data to your backend
-      // For now, we'll just show the success message
-
-      // Hide form and show success message
-      contactForm.style.display = "none";
-      successMessage.classList.remove("hidden");
-
-      // Scroll to success message
-      successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
-
-      // Optional: Reset form after 3 seconds and show it again
-      setTimeout(() => {
-        contactForm.reset();
-        contactForm.style.display = "block";
-        successMessage.classList.add("hidden");
-      }, 5000);
-    });
-  }
-</script>

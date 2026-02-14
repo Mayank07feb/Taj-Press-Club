@@ -1,3 +1,7 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
 <footer class="bg-gradient-to-b from-primary to-primary-hover text-white">
   <!-- Main Footer Content -->
   <div class="max-w-7xl mx-auto px-4 py-16">
@@ -167,11 +171,11 @@
             </li>
             <li>
               <a
-                href="/membership/"
+                href="/members/"
                 class="hover:text-accent transition-colors flex items-center gap-2"
               >
                 <span class="text-accent">→</span>
-                Membership
+                Members
               </a>
             </li>
             <li>
@@ -266,11 +270,18 @@
       <div
         class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left"
       >
-        <div class="text-white/70 text-sm">
+        <div class="text-white/70 text-sm text-center md:text-left">
           <p>
-            © 2026 <span class="text-accent font-semibold">Taj Press Club</span
-            >, Agra.
-            <span class="hidden sm:inline">All rights reserved.</span>
+            © Copyright {currentYear}
+            <span class="text-accent font-semibold">Taj Press Club</span> |
+            <a
+              href="https://www.developersstreet.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-accent transition-colors"
+            >
+              Design and Developed by Developers Street
+            </a>
           </p>
         </div>
 
